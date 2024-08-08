@@ -1,104 +1,91 @@
 # springcloud-learning
 
-<p>
-    <a href="#公众号"><img src="http://macro-oss.oss-cn-shenzhen.aliyuncs.com/mall/badge/%E5%85%AC%E4%BC%97%E5%8F%B7-macrozheng-blue.svg" alt="公众号"></a>
-    <a href="#公众号"><img src="http://macro-oss.oss-cn-shenzhen.aliyuncs.com/mall/badge/%E4%BA%A4%E6%B5%81-%E5%BE%AE%E4%BF%A1%E7%BE%A4-2BA245.svg" alt="交流"></a>
-    <a href="https://github.com/macrozheng/mall-swarm"><img src="http://macro-oss.oss-cn-shenzhen.aliyuncs.com/mall/badge/Cloud%E7%89%88%E6%9C%AC-mall--swarm-brightgreen.svg" alt="SpringCloud版本"></a>
-    <a href="https://github.com/macrozheng/mall"><img src="http://macro-oss.oss-cn-shenzhen.aliyuncs.com/mall/badge/%E5%90%8E%E5%8F%B0%E9%A1%B9%E7%9B%AE-mall-blue.svg" alt="后台项目"></a>
-    <a href="https://github.com/macrozheng/mall-admin-web"><img src="http://macro-oss.oss-cn-shenzhen.aliyuncs.com/mall/badge/%E5%89%8D%E7%AB%AF%E9%A1%B9%E7%9B%AE-mall--admin--web-green.svg" alt="前端项目"></a>
-</p>
-
 ## 简介
 
-一套涵盖大部分核心组件使用的Spring Cloud教程，包括Spring Cloud Alibaba及分布式事务Seata，基于Spring Cloud Greenwich及SpringBoot 2.1.7。24篇文章，篇篇精华，34个Demo，涵盖大部分应用场景。
+2024最新微服务实战教程，Spring Cloud组件、微服务项目实战、Kubernetes容器化部署全方位解析。本教程基于mall-swarm微服务电商项目。
+
+`mall-swarm`项目（11k+star）是一套微服务商城系统，采用了 Spring Cloud 2023 & Alibaba、Spring Boot 3.2、Sa-Token、MyBatis、Elasticsearch、Docker、Kubernetes等核心技术，同时提供了基于Vue的管理后台方便快速搭建系统。`mall-swarm`在电商业务的基础集成了注册中心、配置中心、监控中心、网关等系统功能。文档齐全，附带全套Spring Cloud教程。
+
+## 教程网站
+
+- mall-swarm项目地址：[https://github.com/macrozheng/mall-swarm](https://github.com/macrozheng/mall-swarm)
+- 教程文档网站：[https://cloud.macrozheng.com](https://cloud.macrozheng.com)
 
 ## 目录
 
-### 概述
+### 序章
 
-- [Spring Cloud 整体架构概览](https://www.macrozheng.com/cloud/springcloud.html)
+> 对mall-swarm项目的架构、业务、学习要求及学习思路进行介绍。
 
-### Spring Cloud 组件
+- [mall-swarm项目架构及功能概览](https://cloud.macrozheng.com/foreword/mall_swarm_foreword_01.html)
+- [mall-swarm项目核心功能演示](https://cloud.macrozheng.com/foreword/mall_swarm_foreword_02.html)
+- [mall-swarm项目学习所需知识点](https://cloud.macrozheng.com/foreword/mall_swarm_foreword_03.html)
+- [mall-swarm微服务学习教程内容介绍](https://cloud.macrozheng.com/foreword/mall_swarm_foreword_04.html)
 
-- [Spring Cloud Eureka：服务注册与发现](https://www.macrozheng.com/cloud/eureka.html)
-- [Spring Cloud Ribbon：负载均衡的服务调用](https://www.macrozheng.com/cloud/ribbon.html)
-- [Spring Cloud Hystrix：服务容错保护](https://www.macrozheng.com/cloud/hystrix.html)
-- [Hystrix Dashboard：断路器执行监控](https://www.macrozheng.com/cloud/hystrix_dashboard.html)
-- [Spring Cloud OpenFeign：基于Ribbon和Hystrix的声明式服务调用](https://www.macrozheng.com/cloud/feign.html)
-- [Spring Cloud Zuul：API网关服务](https://www.macrozheng.com/cloud/zuul.html)
-- [Spring Cloud Config：外部集中化配置管理](https://www.macrozheng.com/cloud/config.html)
-- [Spring Cloud Bus：消息总线](https://www.macrozheng.com/cloud/bus.html)
-- [Spring Cloud Sleuth：分布式请求链路跟踪](https://www.macrozheng.com/cloud/sleuth.html)
-- [Spring Cloud Consul：服务治理与配置中心](https://www.macrozheng.com/cloud/consul.html)
-- [Spring Cloud Gateway：新一代API网关服务](https://www.macrozheng.com/cloud/gateway.html)
+### 快速开始
 
-### Spring Cloud Alibaba
+> 讲解mall-swarm项目前后端在Windows下的开发环境搭建以及在Linux下的部署。
 
-- [Spring Cloud Alibaba：Nacos 作为注册中心和配置中心使用](https://www.macrozheng.com/cloud/nacos.html)
-- [Spring Cloud Alibaba：Sentinel实现熔断与限流](https://www.macrozheng.com/cloud/sentinel.html)
-- [使用Seata彻底解决Spring Cloud中的分布式事务问题](https://www.macrozheng.com/cloud/seata.html)
+- [mall-swarm项目后端开发环境搭建](https://cloud.macrozheng.com/start/mall_swarm_deploy_windows.html)
+- [mall-swarm前端开发环境搭建](https://cloud.macrozheng.com/start/mall_swarm_deploy_windows_web.html)
+- [使用虚拟机安装Linux](https://cloud.macrozheng.com/start/mall_swarm_deploy_windows.html)
+- [Docker环境安装及常用命令](https://cloud.macrozheng.com/start/mall_swarm_deploy_windows.html)
+- [mall-swarm在Linux环境下的部署（基于Docker容器）](https://cloud.macrozheng.com/start/mall_swarm_deploy_windows.html)
+- [前端项目对接Linux部署的mall-swarm后端](https://cloud.macrozheng.com/start/mall_swarm_deploy_windows.html)
 
-### Spring Cloud Oauth2
+### 组件篇
 
-- [Spring Cloud Security：Oauth2使用入门](https://www.macrozheng.com/cloud/oauth2.html)
-- [Spring Cloud Security：Oauth2结合JWT使用](https://www.macrozheng.com/cloud/oauth2_jwt.html)
-- [Spring Cloud Security：Oauth2实现单点登录](https://www.macrozheng.com/cloud/oauth2_sso.html)
+> 对Spring Cloud全套核心组件进行讲解，涵盖Spring Cloud Alibaba、Spring Authorization Server和SkyWalking，基于Spring Cloud 2023。
 
-### 微服务监控
+- [Spring Cloud 微服务组件篇介绍](https://cloud.macrozheng.com/cloud/spring_cloud_summary.html)
+- [Spring Cloud Alibaba：Nacos作为注册中心和配置中心使用](https://cloud.macrozheng.com/cloud/spring_cloud_summary.html)
+- [Spring Cloud Eureka：服务注册与发现](https://cloud.macrozheng.com/cloud/spring_cloud_summary.html)
+- [Spring Cloud Consul：服务治理与配置中心](https://cloud.macrozheng.com/cloud/spring_cloud_summary.html)
+- [Spring Cloud Zookeeper：服务治理与配置中心](https://cloud.macrozheng.com/cloud/spring_cloud_summary.html)
+- [Spring Cloud Config：外部集中化配置管理](https://cloud.macrozheng.com/cloud/spring_cloud_summary.html)
+- [Spring Cloud Bus：消息总线](https://cloud.macrozheng.com/cloud/spring_cloud_summary.html)
+- [Spring Cloud Stream：构建消息驱动的微服务应用](https://cloud.macrozheng.com/cloud/spring_cloud_summary.html)
+- [Spring Cloud LoadBalancer：负载均衡的服务调用](https://cloud.macrozheng.com/cloud/spring_cloud_summary.html)
+- [Spring Cloud OpenFeign：声明式服务调用](https://cloud.macrozheng.com/cloud/spring_cloud_summary.html)
+- [Spring Cloud Alibaba：Sentinel实现熔断与限流](https://cloud.macrozheng.com/cloud/spring_cloud_summary.html)
+- [Spring Cloud Circuit Breaker：服务容错保护](https://cloud.macrozheng.com/cloud/spring_cloud_summary.html)
+- [Spring Cloud Gateway：API网关服务](https://cloud.macrozheng.com/cloud/spring_cloud_summary.html)
+- [Spring Cloud Alibaba：使用Seata解决分布式事务问题](https://cloud.macrozheng.com/cloud/spring_cloud_summary.html)
+- [Spring Authorization Server：实现OAuth2认证服务](https://cloud.macrozheng.com/cloud/spring_cloud_summary.html)
+- [Spring Authorization Server：实现自定义JWT中内容及异常响应](https://cloud.macrozheng.com/cloud/spring_cloud_summary.html)
+- [Spring Authorization Server：实现OAuth2客户端](https://cloud.macrozheng.com/cloud/spring_cloud_summary.html)
+- [Spring Authorization Server：实现OAuth2资源服务](https://cloud.macrozheng.com/cloud/spring_cloud_summary.html)
+- [Spring Authorization Server：基于Gateway和Oauth2的微服务权限解决方案](https://cloud.macrozheng.com/cloud/spring_cloud_summary.html)
+- [SkyWalking：微服务请求链路跟踪](https://cloud.macrozheng.com/cloud/spring_cloud_summary.html)
 
-- [Spring Boot Admin：微服务应用监控](https://www.macrozheng.com/cloud/admin.html)
+### 架构篇
 
-### 微服务解决方案
+> 基于Spring Boot单应用脚手架mall-tiny，循序渐进地搭建一个mall-swarm项目在使用的微服务项目脚手架。
 
-- [微服务权限终极解决方案，Spring Cloud Gateway + Oauth2 实现统一认证和鉴权！](https://www.macrozheng.com/cloud/gateway_oauth2.html)
-- [微服务聚合Swagger文档，这波操作是真的香！](https://www.macrozheng.com/cloud/knife4j_cloud.html)
-- [我扒了半天源码，终于找到了Oauth2自定义处理结果的最佳方案！](https://www.macrozheng.com/cloud/oauth2_custom.html)
-- [开箱即用！看看人家的微服务权限解决方案，那叫一个优雅！](https://www.macrozheng.com/cloud/sa_token_cloud_start.html)
-- [再见Feign！推荐一款微服务间调用神器，跟SpringCloud绝配！](https://www.macrozheng.com/cloud/retrofit_cloud.html)
+- [mall-swarm架构篇介绍](https://cloud.macrozheng.com/architect/mall_swarm_arch_intro.html)
+- [mall-tiny项目介绍](https://cloud.macrozheng.com/architect/mall_swarm_arch_intro.html)
+- [SpringDoc使用教程](https://cloud.macrozheng.com/architect/mall_swarm_arch_intro.html)
+- [mall-tiny整合SpringDoc实现在线API文档](https://cloud.macrozheng.com/architect/mall_swarm_arch_intro.html)
+- [mall-tiny项目拆分为多模块](https://cloud.macrozheng.com/architect/mall_swarm_arch_intro.html)
+- [mall-swarm-tiny项目集成注册中心和网关](https://cloud.macrozheng.com/architect/mall_swarm_arch_intro.html)
+- [微服务文档聚合方案：基于Nacos+Gateway+Knife4j](https://cloud.macrozheng.com/architect/mall_swarm_arch_intro.html)
+- [mall-swarm-tiny项目整合Knife4j实现网关聚合文档](https://cloud.macrozheng.com/architect/mall_swarm_arch_intro.html)
+- [Sa-Token使用教程](https://cloud.macrozheng.com/architect/mall_swarm_arch_intro.html)
+- [微服务权限解决方案：基于Nacos+Gateway+Sa-Token](https://cloud.macrozheng.com/architect/mall_swarm_arch_intro.html)
+- [mall-swarm-tiny整合Sa-Token实现认证授权功能](https://cloud.macrozheng.com/architect/mall_swarm_arch_intro.html)
+- [Spring Boot Admin：微服务应用监控](https://cloud.macrozheng.com/architect/mall_swarm_arch_intro.html)
+- [mall-swarm-tiny整合Admin实现微服务监控](https://cloud.macrozheng.com/architect/mall_swarm_arch_intro.html)
+- [mall-swarm项目后端代码结构介绍](https://cloud.macrozheng.com/architect/mall_swarm_arch_intro.html)
+- [mall-swarm项目后端核心代码讲解](https://cloud.macrozheng.com/architect/mall_swarm_arch_intro.html)
+- [mall-swarm项目中如何开发接口和菜单](https://cloud.macrozheng.com/architect/mall_swarm_arch_intro.html)
 
+### K8S篇
 
-## 项目结构
+> 全面讲解Kubernetes的使用，基于企业级容器管理平台KubeSphere，实现mall-swarm项目在Kubernetes环境下的部署。
 
-``` lua
-springcloud-learning
-├── eureka-server -- eureka注册中心
-├── eureka-security-server -- 带登录认证的eureka注册中心
-├── eureka-client -- eureka客户端
-├── user-service -- 提供User对象CRUD接口的服务
-├── ribbon-service -- ribbon服务调用测试服务
-├── hystrix-service -- hystrix服务调用测试服务
-├── turbine-service -- 聚合收集hystrix实例监控信息的服务
-├── hystrix-dashboard -- 展示hystrix实例监控信息的仪表盘
-├── feign-service -- feign服务调用测试服务
-├── zuul-proxy -- zuul作为网关的测试服务
-├── config-server -- 配置中心服务
-├── config-security-server -- 带安全认证的配置中心服务
-├── config-client -- 获取配置的客户端服务
-├── consul-config-client -- 用于演示consul作为配置中心的consul客户端
-├── consul-user-service -- 注册到consul的提供User对象CRUD接口的服务
-├── consul-service -- 注册到consul的ribbon服务调用测试服务
-├── api-gateway -- gateway作为网关的测试服务
-├── admin-server -- admin监控中心服务
-├── admin-client -- admin监控中心监控的应用服务
-├── admin-security-server -- 带登录认证的admin监控中心服务
-├── oauth2-server -- oauth2认证测试服务
-├── oauth2-jwt-server -- 使用jwt的oauth2认证测试服务
-├── oauth2-client -- 单点登录的oauth2客户端服务
-├── nacos-config-client -- 用于演示nacos作为配置中心的nacos客户端
-├── nacos-user-service -- 注册到nacos的提供User对象CRUD接口的服务
-├── nacos-ribbon-service -- 注册到nacos的ribbon服务调用测试服务
-├── sentinel-service -- sentinel功能测试服务
-├── seata-order-service -- 整合了seata的订单服务
-├── seata-storage-service -- 整合了seata的库存服务
-├── seata-account-service -- 整合了seata的账户服务
-├── micro-oauth2 -- Gateway + Oauth2 实现统一认证和鉴权
-└── micro-knife4j -- Gateway + Knife4j聚合API文档
-```
-
-## 公众号
-
-学习不走弯路，关注公众号「**macrozheng**」，回复「**学习路线**」，获取mall项目专属学习路线！
-
-加微信群交流，公众号后台回复「**加群**」即可。
-
-![公众号图片](http://macro-oss.oss-cn-shenzhen.aliyuncs.com/mall/banner/qrcode_for_macrozheng_258.jpg)
+- [K8S篇介绍](https://cloud.macrozheng.com/k8s/k8s_summary.html)
+- [K8S入门教程](https://cloud.macrozheng.com/k8s/k8s_summary.html)
+- [K8S进阶使用](https://cloud.macrozheng.com/k8s/k8s_summary.html)
+- [SpringBoot应用在K8S环境下的部署](https://cloud.macrozheng.com/k8s/k8s_summary.html)
+- [企业级容器管理平台KubeSphere的使用](https://cloud.macrozheng.com/k8s/k8s_summary.html)
+- [mall-swarm在K8S环境下的部署](https://cloud.macrozheng.com/k8s/k8s_summary.html)
