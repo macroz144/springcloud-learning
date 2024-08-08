@@ -2,16 +2,19 @@ package com.macro.cloud.service.impl;
 
 import com.macro.cloud.domain.User;
 import com.macro.cloud.service.UserService;
+import jakarta.annotation.PostConstruct;
 import org.springframework.stereotype.Service;
 import org.springframework.util.CollectionUtils;
 
-import javax.annotation.PostConstruct;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
 /**
- * Created by macro on 2019/8/29.
+ * @auther macrozheng
+ * @description 用户管理Service实现类
+ * @date 2023/11/30
+ * @github https://github.com/macrozheng
  */
 @Service
 public class UserServiceImpl implements UserService {

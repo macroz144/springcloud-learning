@@ -9,7 +9,10 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.client.RestTemplate;
 
 /**
- * Created by macro on 2019/8/29.
+ * @auther macrozheng
+ * @description 使用LoadBalancer实现远程调用的Controller
+ * @date 2023/11/30
+ * @github https://github.com/macrozheng
  */
 @RestController
 @RequestMapping("/user")

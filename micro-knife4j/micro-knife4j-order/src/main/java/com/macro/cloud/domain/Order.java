@@ -1,29 +1,36 @@
 package com.macro.cloud.domain;
 
-import io.swagger.annotations.ApiModelProperty;
+import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Builder;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
+import lombok.experimental.Tolerate;
 
 import java.math.BigDecimal;
 
 /**
- * Created by macro on 2019/8/29.
+ * @auther macrozheng
+ * @description 订单实体类
+ * @date 2023/11/29
+ * @github https://github.com/macrozheng
  */
 @Data
 @EqualsAndHashCode(callSuper = false)
 @Builder
 public class Order {
-    @ApiModelProperty("订单ID")
+    @Schema(title = "订单ID")
     private Long id;
-    @ApiModelProperty("用户ID")
+    @Schema(title = "用户ID")
     private Long userId;
-    @ApiModelProperty("商品ID")
+    @Schema(title = "商品ID")
     private Long productId;
-    @ApiModelProperty("商品数量")
+    @Schema(title = "商品数量")
     private Integer count;
-    @ApiModelProperty("商品单价")
+    @Schema(title = "商品单价")
     private BigDecimal money;
-    @ApiModelProperty("订单状态")
+    @Schema(title = "订单状态")
     private Integer status;
+
+    @Tolerate
+    public Order(){}
 }

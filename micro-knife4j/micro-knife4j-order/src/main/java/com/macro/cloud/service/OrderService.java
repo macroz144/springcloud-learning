@@ -5,7 +5,10 @@ import com.macro.cloud.domain.Order;
 import java.util.List;
 
 /**
- * Created by macro on 2019/8/29.
+ * @auther macrozheng
+ * @description 订单Service
+ * @date 2023/11/29
+ * @github https://github.com/macrozheng
  */
 public interface OrderService {
     void create(Order order);

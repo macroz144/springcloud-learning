@@ -1,5 +1,5 @@
 server:
-  port: 8201
+  port: 8206
 spring:
   application:
     name: zookeeper-user-service
@@ -12,3 +12,8 @@ spring:
         register: true
         # 注册时使用IP地址而不是hostname
         prefer-ip-address: true
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'

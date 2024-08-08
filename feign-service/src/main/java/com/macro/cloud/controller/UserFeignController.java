@@ -7,7 +7,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 /**
- * Created by macro on 2019/8/29.
+ * @auther macrozheng
+ * @description OpenFeign远程调用Controller
+ * @date 2023/12/6
+ * @github https://github.com/macrozheng
  */
 @RestController
 @RequestMapping("/user")

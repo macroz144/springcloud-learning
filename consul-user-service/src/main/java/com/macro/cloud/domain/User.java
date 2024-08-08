@@ -1,7 +1,10 @@
 package com.macro.cloud.domain;
 
 /**
- * Created by macro on 2019/8/29.
+ * @auther macrozheng
+ * @description 用户信息封装
+ * @date 2023/11/30
+ * @github https://github.com/macrozheng
  */
 public class User {
 

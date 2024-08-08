@@ -5,7 +5,10 @@ import com.macro.cloud.domain.User;
 import java.util.List;
 
 /**
- * Created by macro on 2019/8/29.
+ * @auther macrozheng
+ * @description 用户管理Service
+ * @date 2023/11/29
+ * @github https://github.com/macrozheng
  */
 public interface UserService {
     void create(User user);

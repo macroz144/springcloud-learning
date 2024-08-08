@@ -5,16 +5,18 @@ import cn.dev33.satoken.stp.SaTokenInfo;
 import cn.dev33.satoken.stp.StpUtil;
 import cn.hutool.core.collection.CollUtil;
 import com.macro.cloud.domain.UserDTO;
+import jakarta.annotation.PostConstruct;
 import org.springframework.stereotype.Service;
 
-import javax.annotation.PostConstruct;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
 /**
- * 用户管理业务类
- * Created by macro on 2020/6/19.
+ * @auther macrozheng
+ * @description 用户管理业务类
+ * @date 2020/6/19
+ * @github https://github.com/macrozheng
  */
 @Service
 public class UserServiceImpl{

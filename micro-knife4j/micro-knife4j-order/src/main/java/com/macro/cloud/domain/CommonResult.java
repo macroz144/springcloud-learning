@@ -1,7 +1,10 @@
 package com.macro.cloud.domain;
 
 /**
- * Created by macro on 2019/8/29.
+ * @auther macrozheng
+ * @description 通用返回对象
+ * @date 2019/4/19
+ * @github https://github.com/macrozheng
  */
 public class CommonResult<T> {
     private T data;
