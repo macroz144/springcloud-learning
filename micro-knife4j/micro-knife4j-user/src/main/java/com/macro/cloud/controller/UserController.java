@@ -3,8 +3,8 @@ package com.macro.cloud.controller;
 import com.macro.cloud.domain.CommonResult;
 import com.macro.cloud.domain.User;
 import com.macro.cloud.service.UserService;
-import io.swagger.annotations.Api;
-import io.swagger.annotations.ApiOperation;
+import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,9 +13,12 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 /**
- * Created by macro on 2019/8/29.
+ * @auther macrozheng
+ * @description 用户管理Controller
+ * @date 2023/11/29
+ * @github https://github.com/macrozheng
  */
-@Api(description = "用户管理", tags = "UserController")
+@Tag(name = "UserController",description = "用户管理")
 @RestController
 @RequestMapping("/user")
 public class UserController {
@@ -25,14 +28,14 @@ public class UserController {
     @Autowired
     private UserService userService;
 
-    @ApiOperation("添加用户")
+    @Operation(summary = "添加用户")
     @PostMapping("/create")
     public CommonResult create(@RequestBody User user) {
         userService.create(user);
         return new CommonResult("操作成功", 200);
     }
 
-    @ApiOperation("根据ID查询用户")
+    @Operation(summary = "根据ID查询用户")
     @GetMapping("/{id}")
     public CommonResult<User> getUser(@PathVariable Long id) {
         User user = userService.getUser(id);
@@ -40,7 +43,7 @@ public class UserController {
         return new CommonResult<>(user);
     }
 
-    @ApiOperation("根据ID查询多个用户")
+    @Operation(summary = "根据ID查询多个用户")
     @GetMapping("/getUserByIds")
     public CommonResult<List<User>> getUserByIds(@RequestParam List<Long> ids) {
         List<User> userList = userService.getUserByIds(ids);
@@ -48,21 +51,21 @@ public class UserController {
         return new CommonResult<>(userList);
     }
 
-    @ApiOperation("根据用户名查询用户")
+    @Operation(summary = "根据用户名查询用户")
     @GetMapping("/getByUsername")
     public CommonResult<User> getByUsername(@RequestParam String username) {
         User user = userService.getByUsername(username);
         return new CommonResult<>(user);
     }
 
-    @ApiOperation("修改用户")
+    @Operation(summary = "修改用户")
     @PostMapping("/update")
     public CommonResult update(@RequestBody User user) {
         userService.update(user);
         return new CommonResult("操作成功", 200);
     }
 
-    @ApiOperation("根据ID删除用户")
+    @Operation(summary = "根据ID删除用户")
     @PostMapping("/delete/{id}")
     public CommonResult delete(@PathVariable Long id) {
         userService.delete(id);

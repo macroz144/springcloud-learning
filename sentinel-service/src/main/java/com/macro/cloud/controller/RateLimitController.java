@@ -9,8 +9,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
- * 限流功能
- * Created by macro on 2019/11/7.
+ * @auther macrozheng
+ * @description 限流功能测试接口
+ * @date 2023/12/7
+ * @github https://github.com/macrozheng
  */
 @RestController
 @RequestMapping("/rateLimit")
@@ -39,8 +41,8 @@ public class RateLimitController {
      */
     @GetMapping("/customBlockHandler")
     @SentinelResource(value = "customBlockHandler", blockHandler = "handleException",blockHandlerClass = CustomBlockHandler.class)
-    public CommonResult blockHandler() {
-        return new CommonResult("限流成功", 200);
+    public CommonResult customBlockHandler() {
+        return new CommonResult("按自定义方式进行限流", 200);
     }
 
     public CommonResult handleException(BlockException exception){

@@ -1,17 +1,24 @@
 package com.macro.cloud.controller;
 
+import cn.hutool.core.util.StrUtil;
 import com.macro.cloud.domain.CommonResult;
 import com.macro.cloud.domain.User;
 import com.macro.cloud.service.UserService;
+import jakarta.servlet.http.HttpServletRequest;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.context.request.RequestContextHolder;
+import org.springframework.web.context.request.ServletRequestAttributes;
 
 import java.util.List;
 
 /**
- * Created by macro on 2019/8/29.
+ * @auther macrozheng
+ * @description 用户管理Controller
+ * @date 2023/11/30
+ * @github https://github.com/macrozheng
  */
 @RestController
 @RequestMapping("/user")
@@ -32,6 +39,12 @@ public class UserController {
     public CommonResult<User> getUser(@PathVariable Long id) {
         User user = userService.getUser(id);
         LOGGER.info("根据id获取用户信息，用户名称为：{}",user.getUsername());
+//        ServletRequestAttributes servletRequestAttributes = (ServletRequestAttributes) RequestContextHolder.getRequestAttributes();
+//        HttpServletRequest request = servletRequestAttributes.getRequest();
+//        String serviceId = request.getHeader("X-ServiceId");
+//        if (StrUtil.isNotEmpty(serviceId)) {
+//            LOGGER.info("获取到自定义请求头:X-ServiceId={}", serviceId);
+//        }
         return new CommonResult<>(user);
     }
 

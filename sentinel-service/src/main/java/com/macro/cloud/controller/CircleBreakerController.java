@@ -13,8 +13,10 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
 
 /**
- * 熔断功能
- * Created by macro on 2019/11/7.
+ * @auther macrozheng
+ * @description 熔断功能测试接口
+ * @date 2023/12/7
+ * @github https://github.com/macrozheng
  */
 @RestController
 @RequestMapping("/breaker")

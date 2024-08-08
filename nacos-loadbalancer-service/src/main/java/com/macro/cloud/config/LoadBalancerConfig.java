@@ -9,8 +9,10 @@ import org.springframework.http.HttpRequest;
 import org.springframework.http.client.support.HttpRequestWrapper;
 
 /**
- * LoadBalancer相关配置
- * Created by macro on 2022/7/26.
+ * @auther macrozheng
+ * @description LoadBalancer相关配置
+ * @date 2023/11/30
+ * @github https://github.com/macrozheng
  */
 @Configuration
 public class LoadBalancerConfig {
@@ -24,7 +26,7 @@ public class LoadBalancerConfig {
                     public HttpHeaders getHeaders() {
                         HttpHeaders headers = new HttpHeaders();
                         headers.putAll(super.getHeaders());
-                        headers.add("X-InstanceId", instance.getInstanceId());
+                        headers.add("X-ServiceId", instance.getServiceId());
                         return headers;
                     }
                 };

@@ -5,8 +5,10 @@ import lombok.*;
 import java.util.List;
 
 /**
- * 用户信息类
- * Created by macro on 2020/6/19.
+ * @auther macrozheng
+ * @description 用户信息类
+ * @date 2020/6/19
+ * @github https://github.com/macrozheng
  */
 @Data
 @EqualsAndHashCode(callSuper = false)

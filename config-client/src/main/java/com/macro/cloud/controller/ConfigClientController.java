@@ -6,7 +6,10 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
- * Created by macro on 2019/9/11.
+ * @auther macrozheng
+ * @description 从配置中心获取配置的Controller
+ * @date 2023/12/6
+ * @github https://github.com/macrozheng
  */
 @RestController
 @RefreshScope

@@ -17,16 +17,8 @@ spring:
         max-retries-on-same-service-instance: 1
         max-retries-on-next-service-instance: 1
       zone: test
+    openfeign:
+      httpclient:
+        connection-timeout: 5000
 service-url:
   nacos-user-service: http://nacos-user-service
-feign:
-  client:
-    config:
-      default: # Feign调用超时配置
-        connectTimeout: 5000
-        readTimeout: 5000
-rest:
-  template:
-    config: # RestTemplate调用超时配置
-      connectTimeout: 5000
-      readTimeout: 15000

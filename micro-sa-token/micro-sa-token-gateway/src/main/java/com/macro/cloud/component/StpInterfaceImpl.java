@@ -8,7 +8,10 @@ import org.springframework.stereotype.Component;
 import java.util.List;
 
 /**
- * 自定义权限验证接口扩展
+ * @auther macrozheng
+ * @description 自定义权限验证接口扩展
+ * @date 2023/11/28
+ * @github https://github.com/macrozheng
  */
 @Component
 public class StpInterfaceImpl implements StpInterface {

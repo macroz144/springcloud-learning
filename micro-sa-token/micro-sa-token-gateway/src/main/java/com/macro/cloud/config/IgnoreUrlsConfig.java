@@ -8,8 +8,10 @@ import org.springframework.stereotype.Component;
 import java.util.List;
 
 /**
- * 网关白名单配置
- * Created by macro on 2020/6/17.
+ * @auther macrozheng
+ * @description 网关白名单配置
+ * @date 2020/6/17
+ * @github https://github.com/macrozheng
  */
 @Data
 @EqualsAndHashCode(callSuper = false)
